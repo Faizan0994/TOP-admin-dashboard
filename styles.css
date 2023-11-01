@@ -17,6 +17,12 @@ svg {
     width: 24px;
 }
 
+img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
 .sidebar {
     grid-row: 1 / -1;
     display: grid;
@@ -30,6 +36,10 @@ svg {
 .header {
     display: grid;
     grid-column: 2 / -1;
+    grid-template-rows: 8fr 9fr;
+    grid-template-columns: 3fr 2fr;
+    background-color: white;
+    padding: 0 48px;
 }
 
 .main-content {
@@ -70,4 +80,80 @@ svg {
     align-items: center;
     column-gap: 24px;
     padding-left: 5%;
+}
+
+.header svg {
+    fill: black;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.search input {
+    background-color: #e2e8f0;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    height: 30%;
+}
+
+.notifications {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: flex-end;
+    gap: 24px;
+    align-items: center;
+}
+
+.notifications p, button {
+    font-weight: bolder;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 2fr 3fr;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.account img {
+    height: 64px;
+    width: 64px;
+    grid-row: 1 / -1;
+}
+
+.account p {
+    font-size: 1em;
+    font-weight: bold;
+    align-self: end;
+}
+
+.account h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    align-self: start;
+    padding-top: 1%;
+}
+
+.buttons {
+    display: grid;
+    padding-left: 4%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: end;
+}
+
+button {
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    height: 45%;
+    width: 70%;
+    border-radius: 48px;
 }
