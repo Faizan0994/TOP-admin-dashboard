@@ -45,6 +45,7 @@ img {
 .main-content {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+    background-color: #e2e8f0;
 }
 
 .sidebar p {
