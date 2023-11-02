@@ -44,6 +44,9 @@ img {
 }
 
 .main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2 / -1;
     grid-row: 2 / -1;
     background-color: #e2e8f0;
@@ -158,4 +161,19 @@ button {
     height: 45%;
     width: 70%;
     border-radius: 48px;
+}
+
+.projects {
+    grid-column: 1 span 1;
+    grid-row: 1 / -1;
+}
+
+.announcements {
+    grid-column: 2 / -1;
+    grid-row: 1 span 1;
+}
+
+.trending {
+    grid-column: 2 / -1;
+    grid-row: 2 span 1;
 }
