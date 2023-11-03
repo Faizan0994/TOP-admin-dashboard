@@ -7,7 +7,13 @@ body {
     grid-template-rows: 1fr 5fr;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url(./Roboto-Regular.ttf);
+}
+
 p, h1 {
+    font-family: Roboto;
     margin: 0;
 }
 
@@ -161,6 +167,7 @@ button {
     height: 45%;
     width: 70%;
     border-radius: 48px;
+    font-family: roboto;
 }
 
 .projects {
