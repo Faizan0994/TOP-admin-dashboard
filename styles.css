@@ -12,9 +12,14 @@ body {
     src: url(./Roboto-Regular.ttf);
 }
 
-p, h1 {
+p, h1, h2 {
     font-family: Roboto;
     margin: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 svg {
