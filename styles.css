@@ -12,7 +12,7 @@ body {
     src: url(./Roboto-Regular.ttf);
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
     font-family: Roboto;
     margin: 0;
 }
@@ -24,6 +24,10 @@ h2 {
 
 h3 {
     font-size: 1em;
+}
+
+h4 {
+    font-size: 0.8em;
 }
 
 svg {
@@ -191,6 +195,9 @@ button {
 .announcements {
     grid-column: 2 / -1;
     grid-row: 1 span 1;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 8px;
 }
 
 .trending {
@@ -232,4 +239,27 @@ button {
     grid-template-columns: repeat(3, auto);
     justify-content: end;
     column-gap: 24px;
+}
+
+.announcements-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 0px 24px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.announcements-card p {
+    font-size: 0.7em;
+    color: gray;
+}
+
+.announcements-card > div {
+    display: grid;
+    align-content: center;
+}
+
+.mid {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
