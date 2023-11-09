@@ -305,3 +305,7 @@ button {
     font-size: 0.8em;
     color: gray;
 }
+
+.card, .announcements-card, .trending-card {
+    box-shadow: 0 0 8px -4px gray;
+}
